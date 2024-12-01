@@ -1,0 +1,51 @@
+body {
+  /*background-image: url("/images/pexels-alex-andrews-271121-3805983.jpg");*/
+  background-color: rgb(9, 15, 15);
+  background-size: contain;
+  font-family: sans-serif;
+}
+
+.head-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 80px;
+  font-size: 22px;
+  font-weight: bold;
+  color: aliceblue;
+  align-items: center;
+  z-index: 100;
+}
+
+.header-name {
+  padding-left: 100px;
+}
+
+.container-name span {
+  color: lightseagreen;
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 15px;
+  padding-right: 100px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+}
+
+a:hover {
+  color: lightseagreen;
+  text-decoration: underline;
+}

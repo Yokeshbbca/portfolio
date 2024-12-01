@@ -1,0 +1,358 @@
+main {
+  display: grid;
+  grid-template-rows: 10;  
+}
+
+section {
+  margin: 10px;
+}
+
+.home-container, .about-container, .service-container, .skill-container, .project-container {
+  display: grid;
+  height: 400px;
+  color: aliceblue;
+}
+
+.home-container {
+  margin-top: 75px;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  font-size: 23px;
+  align-items: center;
+}
+
+
+.home-profile {
+  padding-left: 100px;
+  font-weight: bold;
+}
+
+.home-profile span, .about-role {
+  color: lightseagreen;
+}
+
+.home-profile-image {
+  text-align: center;
+}
+
+.profile {
+  width: 50%;
+}
+
+.home-profile-name {
+  font-size: 28px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.home-text {
+  font-weight: lighter;
+  font-size: 18px;
+  width: 60%;
+  padding-top: 15px;
+}
+
+.insta-logo, .linkedin-logo {
+  background-color: rgb(156, 28, 66);
+  width: 3%;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.linkedin-logo {
+  background-color: darkblue;
+  border: 1px aliceblue;
+}
+
+.about-container {
+  grid-template-columns: 1.5fr 1fr;
+  font-size: 28px;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.about-profile {
+  width: 30%;
+}
+
+.about-info {
+  font-size: 20px;
+}
+
+.about-info-more {
+  margin: 10px;
+}
+
+.about-info-more a {
+  background-color: lightseagreen;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.about-info-more a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(36, 155, 149);
+}
+
+h1 {
+  text-align: center;
+  color: lightseagreen;
+  font-size: 30px;
+  margin: 0;
+  text-shadow: 5px 5px 10px lightseagreen;
+}
+
+.service-container {
+  grid-template-columns: auto auto;
+  height: 300px;
+}
+
+.service-container div {
+  border: 1px solid lightseagreen;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.service-container div:hover {
+  background-color: rgb(36, 155, 149, 0.1);
+}
+
+h {
+  font-size: 25px;
+}
+
+.service-container div span {
+  color: lightseagreen;
+  font-weight: bolder;
+}
+
+.service-more-info {
+  font-size: 13px;
+  padding: 5px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
+  background-color: lightseagreen;
+  cursor: pointer;
+}
+
+.service-more-info:hover {
+  background-color: rgb(36, 155, 149);
+}
+
+h2 {
+  color: aliceblue;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+h2:hover {
+  text-decoration: underline lightseagreen;
+}
+
+.skill-container {
+  grid-template-columns: auto auto;
+}
+
+.technical-skill-info, .professional-skill-info {
+  text-align: center;
+}
+
+.html-animation, .css-animation, .javascript-animation, .react-animation {
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.5fr;
+  align-content: center;
+  margin: 20px;
+}
+
+.html-animation p, .css-animation p, .javascript-animation p, .react-animation p {
+  margin: 0;
+  padding: 0;
+  color: lightseagreen;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.html-animation .html-animating-div, .css-animation .css-animating-div, .javascript-animation .javascript-animating-div,
+.react-animation .react-animating-div {
+  width: 100%;
+  border: 1px solid lightseagreen;
+  background-color: rgb(14, 13, 13);
+  height: 5px;
+  margin-top: 5px;
+}
+
+.html-animating-div div {
+  animation: htmlanim 3s linear forwards;
+  background-color: lightseagreen;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+
+.css-animating-div div {
+  animation: cssanim 3s linear forwards;
+  background-color: lightseagreen;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+
+.javascript-animating-div div {
+  animation: javascriptanim 3s linear forwards;
+  background-color: lightseagreen;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+
+.react-animating-div div {
+  animation: reactanim 3s linear forwards;
+  background-color: lightseagreen;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+
+@keyframes htmlanim {
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes cssanim {
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes javascriptanim {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes reactanim {
+  100% {
+    width: 30%;
+  }
+}
+
+.professional-infos {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 50px;
+}
+
+.outer {
+  display: flex;
+  width: 50px;
+  border: 3px solid black;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 100%;
+  border: 3px solid black;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+  fill: transparent;
+}
+
+.creative-circle {
+  stroke: lightseagreen;
+  stroke-width: 5px;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  animation: creative 3s linear forwards;
+}
+
+.communication-circle {
+  stroke: lightseagreen;
+  stroke-width: 5px;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  animation: communication 3s linear forwards;
+}
+
+.solving-circle {
+  stroke: lightseagreen;
+  stroke-width: 5px;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  animation: solving 3s linear forwards;
+}
+
+.team-circle {
+  stroke: lightseagreen;
+  stroke-width: 5px;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  animation: team 3s linear forwards;
+}
+
+@keyframes creative {
+  100% {
+    stroke-dashoffset: 130;
+  }
+}
+
+@keyframes communication {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+
+@keyframes solving {
+  100% {
+    stroke-dashoffset: 136;
+  }
+}
+
+@keyframes team {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+
+.project-container {
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  margin: 40px;
+  height: 250px;
+}
+
+.project-container img {
+  width: 100%;
+  height: 200px;
+}
+
+.project-container img:hover {
+  zoom: 1.2;
+  transition: 5ms;
+}
+
+
+
+
