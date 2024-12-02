@@ -59,3 +59,20 @@ a:hover {
     padding-left: 50px;
   }
 }
+
+@media (width <= 600px) {
+  .head-container {
+    height: 50px;
+  }
+  .header-name {
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  ul {
+    column-gap: 10px;
+    padding: 0;
+    font-size: 18px;
+  }
+}
