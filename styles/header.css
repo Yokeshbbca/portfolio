@@ -56,7 +56,12 @@ a:hover {
   }
 
   .header-name {
-    padding-left: 50px;
+    padding-left: 40px;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
   }
 }
 
