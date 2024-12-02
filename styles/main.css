@@ -353,7 +353,7 @@ svg {
   transition: 5ms;
 }
 
-@media (width <= 820px) {
+@media (width <= 900px) {
   .home-container, .service-container, .about-container, .skill-container, .project-container {
     grid-template-columns: auto;
     height: fit-content;
