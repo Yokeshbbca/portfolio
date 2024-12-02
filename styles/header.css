@@ -81,3 +81,15 @@ a:hover {
     font-size: 18px;
   }
 }
+
+@media (width < 480px) {
+  .header-name {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  ul {
+    column-gap: 2px;
+    font-size: 15px;
+  }
+}
