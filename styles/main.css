@@ -353,6 +353,15 @@ svg {
   transition: 5ms;
 }
 
+@media (width <= 820px) {
+  .home-container, .service-container, .about-container, .skill-container, .project-container {
+    grid-template-columns: auto;
+    height: fit-content;
+    row-gap: 10px;
+  }
 
-
-
+  .about-profile {
+    visibility: hidden;
+    width: 1px;
+  }
+}
