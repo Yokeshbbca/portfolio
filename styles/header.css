@@ -49,3 +49,13 @@ a:hover {
   color: lightseagreen;
   text-decoration: underline;
 }
+
+@media (width <= 820px) {
+  .head-container {
+    font-size: 20px;
+  }
+
+  .header-name {
+    padding-left: 50px;
+  }
+}
