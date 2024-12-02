@@ -50,7 +50,7 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (width <= 820px) {
+@media (width <= 900px) {
   .head-container {
     font-size: 20px;
   }
