@@ -77,3 +77,11 @@ input {
 .up-arrow:hover {
   background-color: rgb(36, 155, 149);
 }
+
+@media (width <= 820px) {
+  .footer-container {
+    grid-template-columns: auto;
+    height: fit-content;
+    row-gap: 10px;
+  }
+}
