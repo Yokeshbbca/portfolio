@@ -6,12 +6,12 @@ body {
 }
 
 .head-container {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex: 2;
   justify-content: space-between;
   background-color: black;
   position: fixed;
-  width: 100%;
+  right: 0;
   top: 0;
   left: 0;
   height: 80px;
